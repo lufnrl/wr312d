@@ -1,0 +1,114 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --green: #18302B;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.hero{
+    height: 100svh;
+    background: url("../img/hero-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+
+    &__title{
+        margin: 0;
+        font-family: Playfair Display;
+        color: var(--white);
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 88px;
+    }
+
+    &__button{
+        margin: 50px 0;
+        font-weight: bold;
+        border: 0;
+        background-color: #fff;
+        padding: 16px 32px;
+        font-size: 1em;
+    }
+
+    &__content{
+        position: absolute;
+        top: 100px;
+        left: 91px;
+    }
+}
+
+.about{
+
+    &__title{
+        font-size: 46px;
+        font-weight: 600;
+        margin: 50px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__text{
+        width: 100%;
+        margin: 50px;
+        width: 40%;
+    }
+
+    &__subtitle{
+        font-size: 40px;
+        margin-bottom: 24px;
+        font-weight: 700;
+    }
+
+    &__description{
+        font-size: 20px;
+    }
+
+    &__image{
+        width: 30%;
+    }
+
+}
+
+.industries{
+
+    background-color: var(--green);
+    padding: 50px;
+    color: var(--white);
+
+    &__container{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 46px;
+        margin-bottom: 50px;
+    }
+
+    &__name{
+        margin: 0;
+    }
+
+    &__item{
+        text-align: center;
+    }
+}
+
+.video{
+    margin: auto;
+    padding: 50px;
+    width: 90%;
+
+    &__image{ 
+        width: 100%;
+    }
+}
