@@ -1,11 +1,18 @@
 :root{
     --white: #fff;
     --black: #000;
+    --lightgrey: #18302B08;
+    --darkgrey: #737373;
     --green: #18302B;
+    --lightgreen: #33504A14;
 }
 
 body{
     font-family: 'Rubik', sans-serif;
+}
+
+h2{
+    margin: 0;
 }
 
 .hero{
@@ -43,10 +50,12 @@ body{
 
 .about{
 
+    width: 90%;
+    margin: 100px auto;
+
     &__title{
         font-size: 46px;
         font-weight: 600;
-        margin: 50px;
     }
 
     &__item{
@@ -79,8 +88,8 @@ body{
 
 .industries{
 
+    padding: 100px;
     background-color: var(--green);
-    padding: 50px;
     color: var(--white);
 
     &__container{
@@ -111,4 +120,197 @@ body{
     &__image{ 
         width: 100%;
     }
+}
+
+.clients{
+
+    background-color: var(--lightgrey);
+    padding: 50px;
+
+    &__title{
+        text-align: center;
+        font-size: 46px;
+        font-weight: 600;
+    }
+
+    &__description{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__list{
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card{
+        background-color: var(--white);
+        display: flex;
+        margin: 16px;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    &__text{
+        text-align: center;
+    }
+
+    &__name{
+        margin: 0
+    }
+
+    &__position{
+        margin: 0;
+        color: var(--darkgrey);
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__date{
+        margin: 0;
+    }
+}
+
+.blog{
+
+    width: 90%;
+    margin: 100px auto;
+
+    &__title{
+        font-size: 46px;
+        font-weight: 600;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        margin: 32px;
+    }
+
+    &__post{
+        width: 28%;
+    }
+
+    &__image{
+        width: 100%;
+    }
+    
+    &__button{   
+        display: flex;
+        width: 120px;
+        padding: 12px 20px;
+        justify-content: center;
+        border-radius: 26px;
+        border: 1px solid #B6B6B6;
+        background-color: var(--white);
+        font-size: 14px;
+        font-weight: 500;
+        margin: auto;
+    }
+}
+
+.contact-banner{
+    background-color: var(--lightgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    padding: 32px;
+    margin: 136px 0;
+
+    &__title{
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    &__button{
+        width: 164px;
+        height: fit-content;
+        padding: 16px;
+        border: 0;
+        background-color: var(--green);
+        color: var(--white);
+        font-size: 16px;
+    }
+}
+
+.contact{
+
+    width: 90%;
+    margin: auto;
+    
+    &__title{ 
+        font-size: 46px;
+        font-family: Rubik;
+        font-weight: 600;
+        margin-bottom: 60px;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    &__info{
+        width: 30%;
+    }
+
+    &__form-container{
+        width: 50%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__info{
+        color: #1E1E1E;
+        font-size: 19px;
+        font-weight: 500;
+
+        a{
+            text-decoration: none;
+            color: #1E1E1E;
+        }
+    }
+
+    &__champ{
+        width: 90%;
+        border: 1px solid #D4D4D4;
+        background: #FFF;
+        padding: 16px;
+        margin: 12px 0;
+        color: #868686;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    textarea{
+        background: #F4F4F4;
+        height: 200px;
+    }
+
+    &__button{
+        background: #737373; 
+        padding: 16px 48px;
+        border: 0;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+footer{
+    background-color: var(--green);
+    margin-top: 100px;
+
 }
